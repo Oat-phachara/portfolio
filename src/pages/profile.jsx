@@ -28,14 +28,14 @@ export function Profile() {
                 </div>
                 <div className="flex flex-col mt-2">
                   <Typography variant="h4" color="blue-gray">
-                    Jenna Stones
+                    Phachara Bunjongkasena na ayuthaya
                   </Typography>
-                  <Typography variant="paragraph" color="gray" className="!mt-0 font-normal">jena@mail.com</Typography>
+                  <Typography variant="paragraph" color="gray" className="!mt-0 font-normal">oat19411@hotmail.com</Typography>
                 </div>
               </div>
 
               <div className="mt-10 mb-10 flex lg:flex-col justify-between items-center lg:justify-end lg:mb-0 lg:px-4 flex-wrap lg:-mt-5">
-                <Button className="bg-gray-900 w-fit lg:ml-auto">Conntect</Button>
+                <Button className="bg-gray-900 w-fit lg:ml-auto"><a href="https://www.instagram.com/oat.bun/" target="_blank">Conntect</a></Button>
                 <div className="flex justify-start py-4 pt-8 lg:pt-4">
                   <div className="mr-4 p-3 text-center">
                     <Typography
@@ -43,7 +43,7 @@ export function Profile() {
                       color="blue-gray"
                       className="font-bold uppercase"
                     >
-                      22
+                      1,706
                     </Typography>
                     <Typography
                       variant="small"
@@ -58,7 +58,7 @@ export function Profile() {
                       color="blue-gray"
                       className="font-bold uppercase"
                     >
-                      10
+                      119
                     </Typography>
                     <Typography
                       variant="small"
@@ -73,7 +73,7 @@ export function Profile() {
                       color="blue-gray"
                       className="font-bold uppercase"
                     >
-                      89
+                      170
                     </Typography>
                     <Typography
                       variant="small"
@@ -89,31 +89,28 @@ export function Profile() {
             <div className="-mt-4 container space-y-2">
               <div className="flex items-center gap-2">
                 <MapPinIcon className="-mt-px h-4 w-4 text-blue-gray-500" />
-                <Typography className="font-medium text-blue-gray-500">
-                  Los Angeles, California
-                </Typography>
+                <a href="https://maps.app.goo.gl/i34gidZ1uXFPuAC26" target="_blank" className="font-medium text-blue-gray-500">
+                Thailand ,Bangkok                
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <BriefcaseIcon className="-mt-px h-4 w-4 text-blue-gray-500" />
-                <Typography className="font-medium text-blue-gray-500">
-                  Solution Manager - Creative Tim Officer
-                </Typography>
+                <a href="https://www.workpoint.co.th/en/home" target="_blank" className="font-medium text-blue-gray-500">
+                Creative Editor  - Workpoint Entertainment
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <BuildingLibraryIcon className="-mt-px h-4 w-4 text-blue-gray-500" />
-                <Typography className="font-medium text-blue-gray-500">
-                  University of Computer Science
-                </Typography>
+                <a href="https://www.bu.ac.th/th/" target="_blank" className="font-medium text-blue-gray-500">
+                  Bangkok University
+                </a>
               </div>
             </div>
             <div className="mb-10 py-6">
               <div className="flex w-full flex-col items-start lg:w-1/2">
                 <Typography className="mb-6 font-normal text-blue-gray-500">
-                  An artist of considerable range, Jenna the name taken by
-                  Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                  performs and records all of his own music, giving it a
-                  warm, intimate feel with a solid groove structure. An
-                  artist of considerable range.
+                Born and raised in Bangkok, Thailand, I am a recent graduate of the University of Thailand, holding a Bachelor's degree in Communication Arts with a major in Broadcasting and Streaming Media Production. From a young age, I have been fascinated by the intersection of technology and design, sparking a passion that led me to delve into the world of software engineering and UI/UX design.
+<br /><br />My journey began with a keen interest in how stories are told and amplified through the power of media. But I soon discovered that the tools behind these stories held an equal, if not greater, allure. Exploring programming languages like [CSS] ignited a fire within me, enabling me to bring my creative vision to life through code.
                 </Typography>
                 <Button variant="text">Show more</Button>
               </div>

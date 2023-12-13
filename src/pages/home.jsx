@@ -30,11 +30,11 @@ export function Home() {
                 className="mb-6 font-black"
               >
                 
-Portfolio Introduction for Phachara
+Portfolio Introduction 
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-              Born and raised in Bangkok, Thailand, I am a recent graduate of the University of Thailand, holding a Bachelor's degree in Communication Arts with a major in Broadcasting and Streaming Media Production. From a young age, I have been fascinated by the intersection of technology and design, sparking a passion that led me to delve into the world of software engineering and UI/UX design.
-              <br/>While my formal coding experience may span only one year, my passion for technology extends far beyond the classroom. I am a self-motivated learner, constantly seeking new challenges and opportunities to push my boundaries. This portfolio serves as a testament to my dedication, showcasing projects that represent my growth and diverse skill set.
+              While my informal coding experience may span only one year, my passion for technology extends far beyond the classroom. I am a self-motivated learner, constantly seeking new challenges and opportunities to push my boundaries. This portfolio serves as a testament to my dedication, showcasing projects that represent my growth and diverse skill set.
+              <br /> <br />As you navigate through this portfolio, you will encounter projects <br />that reflect my diverse skill set:
               </Typography>
             </div>
           </div>
@@ -111,9 +111,7 @@ Portfolio Introduction for Phachara
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle section="Our Team" heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
+          Thank you for visiting my portfolio! I invite you to explore my work and connect with me to discuss potential collaborations.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
