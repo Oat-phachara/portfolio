@@ -63,24 +63,25 @@ export function Navbar({ brandName, routes, action }) {
   return (
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
-        <Link to="/">
-          <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-            {brandName}
+         
+         <Link to="/" >
+        
+
+          <Typography className="mr-5 ml-2 cursor-pointer py-3 font-bold flex text-lg		">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-6">
+  <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+</svg>{brandName}
           </Typography>
+
         </Link>
-        <div className="hidden lg:block">{navList}</div>
+        <div className="hidden lg:block ">{navList}</div>  
         <div className="hidden gap-2 lg:flex">
-          <a
-            href="https://www.material-tailwind.com/blocks?ref=mtkr"
-            target="_blank"
-          >
-            <Button variant="text" size="sm" color="white" fullWidth>
-              pro version
-            </Button>
-          </a>
-          {React.cloneElement(action, {
-            className: "hidden lg:inline-block",
-          })}
+        <Link to="/contact" >
+       
+      <Button className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"   size="sm " fullWidth >
+Contact      </Button>
+        </Link>
+
         </div>
         <IconButton
           variant="text"
@@ -102,15 +103,6 @@ export function Navbar({ brandName, routes, action }) {
       >
         <div className="container mx-auto">
           {navList}
-          <a
-            href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
-            target="_blank"
-            className="mb-2 block"
-          >
-            <Button variant="text" size="sm" fullWidth>
-              pro version
-            </Button>
-          </a>
           {React.cloneElement(action, {
             className: "w-full block",
           })}
@@ -121,16 +113,13 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: "Material Tailwind React",
+  brandName: "Phachara.",
   action: (
-    <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-      target="_blank"
-    >
-      <Button variant="gradient" size="sm" fullWidth>
-        free download
-      </Button>
-    </a>
+    <Link to="/contact" >
+
+      <Button className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"   size="sm " fullWidth >
+Contact      </Button>
+</Link>
   ),
 };
 

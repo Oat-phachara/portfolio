@@ -79,29 +79,29 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: "Tailwind & React",
   description:
     "Easy to use React components for Tailwind CSS and Material Design.",
   socials: [
     {
       color: "gray",
       name: "twitter",
-      path: "https://www.twitter.com/creativetim",
+      path: "https://twitter.com/elonmusk",
     },
     {
       color: "gray",
       name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      path: "https://www.youtube.com/channel/UCLCmT1mT9W5gth9ELYeKEFQ",
     },
     {
       color: "gray",
       name: "instagram",
-      path: "https://www.instagram.com/creativetimofficial/",
+      path: "https://www.instagram.com/oat.bun/",
     },
     {
       color: "black",
       name: "github",
-      path: "https://github.com/creativetimofficial/material-tailwind",
+      path: "https://github.com/Oat-phachara",
     },
   ],
   menus: [
@@ -150,7 +150,7 @@ Footer.defaultProps = {
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
-        Creative Tim
+        Phachara
       </a>
       .
     </>

@@ -5,6 +5,8 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { PageTitle, Footer } from "@/widgets/layout";
+
 
 
 export function SignIn() {
