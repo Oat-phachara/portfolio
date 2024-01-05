@@ -14,6 +14,10 @@ import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import { useState } from "react";
+
+const title = ["pokedex"]
+const detail = ["The Pokedex API Integration project for my portfolio is a dynamic and interactive web application that leverages the power of the Pokémon API to create a modern and user-friendly Pokedex. This project showcases my skills in web development, API integration, and user interface design."]
 
 export function Home() {
   return (
@@ -80,7 +84,7 @@ Portfolio Introduction
               <Button variant="filled">read more</Button>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-              <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
+              <a href="https://github.com/Oat-phachara/Pokedex" className="shadow-lg border shadow-gray-500/10 rounded-lg">
                 <CardHeader floated={false} className="relative h-56">
                   <img
                     alt="Card Image"
@@ -89,46 +93,42 @@ Portfolio Introduction
                   />
                 </CardHeader>
                 <CardBody>
-                  <Typography variant="small" color="blue-gray" className="font-normal">Enterprise</Typography>
-                  <Typography
+                  <Typography variant="small" color="blue-gray" className="font-normal">Project</Typography>
+                  <Typography 
                     variant="h5"
                     color="blue-gray"
                     className="mb-3 mt-2 font-bold"
                   >
-                    Top Notch Services
+                    {title}
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                      {detail}
                   </Typography>
                 </CardBody>
-              </Card>
+              </a>
             </div>
+            <div class="p-10">
+        <button  class="w-10 h-10 rounded-full bg-gray-500 hover:bg-blue-500 text-white">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        </div>
           </div>
         </div>
       </section>
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
+
           <PageTitle section="Our Team" heading="Here are our heroes">
           Thank you for visiting my portfolio! I invite you to explore my work and connect with me to discuss potential collaborations.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-            {teamData.map(({ img, name, position, socials }) => (
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-5">
+            {teamData.map(({ img, name, position,  }) => (
               <TeamCard
                 key={name}
                 img={img}
                 name={name}
                 position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-xl fa-${name}`} />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
+              
               />
             ))}
           </div>
@@ -141,6 +141,7 @@ Portfolio Introduction
             to low ice. According to the National Oceanic and Atmospheric
             Administration, Ted, Scambos.
           </PageTitle>
+
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             {contactData.map(({ title, icon, description }) => (
               <Card
@@ -163,41 +164,12 @@ Portfolio Introduction
               </Card>
             ))}
           </div>
-          <PageTitle section="Contact Us" heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
-          </PageTitle>
-          <form className="mx-auto w-full mt-12 lg:w-5/12">
-            <div className="mb-8 flex gap-8">
-              <Input variant="outlined" size="lg" label="Full Name" />
-              <Input variant="outlined" size="lg" label="Email Address" />
-            </div>
-            <Textarea variant="outlined" size="lg" label="Message" rows={8} />
-            <Checkbox
-              label={
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="flex items-center font-normal"
-                >
-                  I agree the
-                  <a
-                    href="#"
-                    className="font-medium transition-colors hover:text-gray-900"
-                  >
-                    &nbsp;Terms and Conditions
-                  </a>
-                </Typography>
-              }
-              containerProps={{ className: "-ml-2.5" }}
-            />
-            <Button variant="gradient" size="lg" className="mt-8" fullWidth>
-              Send Message
-            </Button>
-          </form>
+       
         </div>
       </section>
       <div className="bg-white">
         <Footer />
+
       </div>
     </>
   );
